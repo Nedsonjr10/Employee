@@ -24,7 +24,7 @@ public class App {
        List<String> Email = emp.stream().filter(p -> p.getSalary() > salary).map(e -> e.getEmail()).sorted().collect(Collectors.toList());
        System.out.println("Email " + Email);
 
-        System.out.println("Enter Salary : ");
+        System.out.println("Enter Character : ");
        char letter = sc.next().charAt(0);
       
        Double sum = emp.stream().filter(n -> n.getName().charAt(0) == letter).map(s -> s.getSalary()).reduce(0.0, (x,y) -> x + y);
